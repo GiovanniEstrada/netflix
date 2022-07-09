@@ -4,6 +4,7 @@ import request from './requests'
 import Movies from './Components/js/Movies'
 import Banner from './Components/js/Banner'
 import Navbar from './Components/js/Navbar'
+import Credits from './Components/js/Credits'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Movies title="Especial Halloween" url={request.fetchHorrorMovies} />
       <Movies title="Cine Romantico" url={request.fetchRomanceMovies} />
       <Movies title="Documentales" url={request.fetchDocumentaries} />
+      <Credits/>
     </>
   )
 }
