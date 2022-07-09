@@ -10,7 +10,7 @@ function Credits() {
         <>
             <div className='main'>
                 <div className='name'>
-                    <h2><BiRename className='logo'/> Cristian Giovanni Estrada Ramirez</h2>
+                    <h2><BiRename className='logo'/> Giovanni Estrada</h2>
                 </div>
                 <div className='gmail'>
                     <h2><SiGmail className='logo'/> cgiovanniestrada@gmail.com</h2>
