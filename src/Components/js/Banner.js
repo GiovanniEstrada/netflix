@@ -14,12 +14,14 @@ function Banner() {
             const request = await axios.get(requests.fetchNetflixOriginals);
             const random = Math.floor(Math.random() * request.data.results.length - 1);
             console.log(random)
-            setBanner(request.data.results[random])
-            console.log(banner)
+            setBanner(request.data.results[random]);
             return request;
         }
+
         getBanner();
-    }, [banner]);
+
+    },[]);
+    console.log(banner);
 
     return (
         <header
