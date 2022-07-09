@@ -7,19 +7,19 @@ function Banner() {
 
     const [banner, setBanner] = useState([]);
     const img_url = "http://image.tmdb.org/t/p/original/";
-    async function getBanner() {
-        const request = await axios.get(requests.fetchNetflixOriginals);
-        const random = Math.floor(Math.random() * request.data.results.length - 1);
-        console.log(random)
-        setBanner(request.data.results[random])
-        console.log(banner)
-        return request;
-    }
+     
 
     useEffect(() => {
-       
+        async function getBanner() {
+            const request = await axios.get(requests.fetchNetflixOriginals);
+            const random = Math.floor(Math.random() * request.data.results.length - 1);
+            console.log(random)
+            setBanner(request.data.results[random])
+            console.log(banner)
+            return request;
+        }
         getBanner();
-    }, []);
+    }, [banner]);
 
     return (
         <header

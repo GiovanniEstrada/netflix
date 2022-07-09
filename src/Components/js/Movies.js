@@ -14,7 +14,7 @@ function Movies({title, url, main}) {
             setMovies(request.data.results)
         } 
         getMovies();
-    }, [])
+    }, [url])
 
   return (
     <div className='movies'>
