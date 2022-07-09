@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-bg: #111;
+    --color-primary: #5c5a6A;
+    --color-items: #9e9dcf;
+    --color-secundary: #00c896;
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+} 
